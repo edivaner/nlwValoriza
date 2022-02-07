@@ -6,6 +6,7 @@ class createUsersController{
 
     async handle(request: Request, response: Response){
         const {name, email, admin} = request.body;
+        // console.log(`nome: ${name}`);
     
         const createUserService = new CreateUsersService();
 
